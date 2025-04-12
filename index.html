@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SanzOfficial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://files.catbox.moe/w489i7.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 5px 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-list {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .product {
+      background-color: rgba(255, 255, 255, 0.08);
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid white;
+    }
+
+    .product-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .price {
+      color: #ffd700;
+      margin: 5px 0;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+
+    @media screen and (max-width: 600px) {
+      .product {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="navbar">
+      <h2>SanzStore</h2>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu" id="menu">
+        <a href="https://t.me/SanzxBug" target="_blank">Tele Admin</a>
+        <a href="https://wa.me/6285272976447" target="_blank">Kontak Admin (WA)</a>
+      </div>
+    </div>
+
+    <h1>Daftar Produk</h1>
+    <div class="product-list">
+
+      <<div class="product">
+  <img src="https://img1.pixhost.to/images/4978/587220808_alvin.jpg" alt="SC TRAZ INVICTUS" style="width: 50%; border-radius: 5px; margin-bottom: 10px;">
+  <div class="product-title">SC TRAZ INVICTUS</div>
+  <div class="price">NO UPDATE: Rp45.000</div>
+  <div class="price">FREE UPDATE: Rp60.000</div>
+  <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20SC%20TRAZ%20INVICTUS" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat WA
+  </a>
+</div>
+
+      <div class="product">
+        <div class="product-title">RESELLER SC TRAZ INVICTUS</div>
+        <div class="price">NO UPDATE: Rp90.000</div>
+        <div class="price">FREE UPDATE: Rp120.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20jadi%20Reseller%20SC%20TRAZ" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+      
+      <div class="product">
+        <div class="product-title">MURBUG SC TRAZ INVICTUS</div>
+        <div class="price">Rp5.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20MURBUG%20SC%20TRAZ%20INVICTUS" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">PT SC TRAZ INVICTUS</div>
+        <div class="price">Rp130.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20PT%20SC%20TRAZ%20INVICTUS" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">MODERATOR SC TRAZ INVICTUS</div>
+        <div class="price">Rp150.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20MODERATOR%20SC%20TRAZ%20INVICTUS" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">CEO SC TRAZ INVICTUS</div>
+        <div class="price">Rp200.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20CEO%20SC%20TRAZ%20INVICTUS" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">TANGAN KANAN SC TRAZ INVICTUS</div>
+        <div class="price">Rp250.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20TANGAN%20KANAN%20SC%20TRAZ%20INVICTUS" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">RESELLER PANEL PRIVATE</div>
+        <div class="price">Rp10.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20jadi%20Reseller%20Panel%20Private" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">RESELLER PANEL BIASA</div>
+        <div class="price">Rp5.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20jadi%20Reseller%20Panel%20Biasa" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">ADMIN PANEL</div>
+        <div class="price">Rp10.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20Admin%20Panel" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">PT PANEL</div>
+        <div class="price">Rp15.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20PT%20Panel" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">OWNER PANEL</div>
+        <div class="price">Rp20.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20Owner%20Panel" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-title">TANGAN KANAN PANEL</div>
+        <div class="price">Rp30.000</div>
+        <a class="whatsapp-btn" href="https://wa.me/6285272976447?text=Ingin%20beli%20Tangan%20Kanan%20Panel" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat WA
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
